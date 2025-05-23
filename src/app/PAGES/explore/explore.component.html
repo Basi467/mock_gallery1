@@ -1,0 +1,28 @@
+<div class="container">
+
+  <div class="grid">
+
+    <!-- Static Text Block (like "Discover our world") -->
+    <div class="grid-item text wide">
+      <h2>Discover our world</h2>
+    </div>
+
+    <!-- Loop: Dynamic Image Cards -->
+    <app-card
+      class="grid-item"
+      *ngFor="let image of images; let i = index"
+      [image]="image"
+      [ngClass]="{
+        'tall': i === 1 || i === 4,
+        'wide': i === 2
+      }" (imageClick)="onImageClick($event)"
+     
+    ></app-card>
+
+    <!-- Another Static Text Block -->
+    <div class="grid-item text">
+      <p>Explore the world of images.</p>
+    </div>
+
+  </div>
+</div>

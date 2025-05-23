@@ -1,0 +1,32 @@
+/* Ensure the navbar stays on top */
+body {
+  margin-left: 120px;
+  background-color: #121212;
+}
+
+
+app-navbar {
+  position: fixed;
+  top: 0;
+  left: 60px; /* Same as sidebar width */
+  right: 0;
+  z-index: 1000;
+}
+
+/* Push the whole layout below navbar */
+.layout {
+  display: flex;
+  margin-top: 60px; /* Adjust to match navbar height */
+}
+
+/* Vertical sidebar */
+app-vertical-navbar {
+  width: 60px;
+  position: fixed;
+  top: 0px; /* Same as navbar height */
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  background: #121212;
+  border-right: 1px solid #eee;
+}

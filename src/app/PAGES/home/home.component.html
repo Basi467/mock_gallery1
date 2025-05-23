@@ -1,0 +1,18 @@
+
+
+  <main class="main-content">
+   <div class="masonry-grid">
+<div class="masonry-item" *ngFor="let image of images">
+  <app-card
+    [image]="image"
+    [variant]="'home'"
+    (imageClick)="onImageClick($event)">
+  </app-card>
+</div>
+
+
+</div>
+
+
+    <!-- Add more cards or routed content here -->
+  </main>

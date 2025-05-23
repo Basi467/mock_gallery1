@@ -1,0 +1,24 @@
+<div class="single-view-container">
+
+<div class="imageview">
+  <div class="main-polaroid">
+    <img [src]="image?.urls?.regular" alt="Selected Image" class="image"/>
+    <div class="info">
+      <h2>{{ image?.description || image?.alt_description || 'No description' }}</h2>
+      <p>By {{ image?.user?.name }}</p>
+    </div>
+   
+  </div>
+</div>
+  
+ <div class="related-section">
+    <h3>Related Images</h3>
+    <div class="related-grid">
+      <div class="related-item" *ngFor="let img of relatedImages">
+        <app-card [image]="img" [variant]="'home'" (imageClick)="onImageClick($event)"></app-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,14 @@
+<div class="card" [ngClass]="variant" (click)="onImageClick()">
+  <img [src]="image?.urls?.regular" alt="Image" />
+
+  <!-- Show overlay only if variant is 'home' -->
+  <div class="overlay" *ngIf="variant === 'home'">
+    <div class="info-bar">
+      <p>By {{ image?.user?.name }}</p>
+      <i class="bi bi-heart"></i>
+    </div>
+  </div>
+   <div class="overlay" *ngIf="variant === 'explore'">
+   
+  </div>
+</div>

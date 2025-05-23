@@ -1,0 +1,87 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 200px;
+  padding: 40px 20px;
+  background-color: #111;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+
+  p {
+    font-size: 1rem;
+    color: #444;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+    margin: 8px 0 0;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: 200px; /* Enables masonry style */
+  gap: 24px;
+}
+
+/* New class for grid-item span variants */
+.grid-item {
+  &.tall {
+    grid-row: span 2;
+  }
+
+  &.wide {
+    grid-column: span 2;
+  }
+
+  &.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #121212;
+    border-radius: 16px;
+    text-align: center;
+
+    h2, p {
+      margin: 0;
+      color: #a0cbaf;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+/* Existing card styles stay untouched */
+.card {
+  position: relative;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+}
