@@ -1,59 +1,101 @@
-# PintrstMock
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+# 📸 Angular 19 Pinterest-Like Image Gallery
 
-## Development server
+A responsive,  image gallery built using **Angular 19**. This application fetches stunning images from the **Unsplash API**, allowing users to browse, search, and view images in a clean, modern UI. Built with standalone Angular components
 
-To start a local development server, run:
+## 🔧 Features
+
+- **Home Page** – Displays a masonry grid of curated/random images.
+- **Explore Page** – Space for future categories or curated collections.
+- **Single Image View** – View selected image with related suggestions.
+- **Profile Page** – A base for user-specific content (extendable).
+- **Masonry Layout** – Responsive column-based layout that adapts to screen sizes.
+- **Angular 19 Standalone Components** – Clean, maintainable architecture.
+- **Dark Mode UI** – Sleek and user-friendly design.
+
+---
+
+## 🧰 Tech Stack
+
+- [Angular 19](https://angular.io)
+- [TypeScript](https://www.typescriptlang.org/)
+- [SCSS](https://sass-lang.com/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [Unsplash API](https://unsplash.com/developers)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js & npm
+- Angular CLI (`npm install -g @angular/cli`)
+
+### Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/angular-image-gallery.git
+
+# Navigate to the project directory
+cd angular-image-gallery
+
+# Install dependencies
+npm install
+
+# Add your Unsplash API key in `apiservice.service.ts`
+# Replace YOUR_ACCESS_KEY with your actual Unsplash access key
+```
+
+### Run the app
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Navigate to `http://localhost:4200/` in your browser.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📁 Project Structure
 
-```bash
-ng generate component component-name
+```
+src/
+├── app/
+│   ├── UI/                  # Reusable UI components (card, navbar, etc.)
+│   ├── pages/               # Feature pages (home, explore, singleview)
+│   ├── apiservice.service.ts
+│   └── app.routes.ts
+├── assets/
+├── environments/
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 💡 Future Enhancements
 
-## Building
+- 🔐 User authentication & session
+- ❤️ Save/Favorite images
+- ♾️ Infinite scroll
+- 🗂️ Category filters
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 📜 License
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This project is licensed under the MIT License.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🤝 Contributing
 
-```bash
-ng test
-```
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 🌟 Acknowledgements
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Unsplash API](https://unsplash.com/developers)
+- [Angular](https://angular.io/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
