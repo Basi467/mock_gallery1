@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-singleview',
   standalone: true,
-  imports: [CardComponent,HomeComponent,CommonModule],
+  imports: [CardComponent,CommonModule],
   templateUrl: './singleview.component.html',
   styleUrl: './singleview.component.scss'
 })

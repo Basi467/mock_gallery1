@@ -8,7 +8,7 @@ import { RouterLink,Router } from '@angular/router';
 @Component({
   selector: 'app-explore',
   standalone: true,
-  imports: [CommonModule, CardComponent, NavbarComponent, VerticalNavbarComponent],
+  imports: [CommonModule, CardComponent],
   templateUrl: './explore.component.html',
   styleUrls: ['./explore.component.scss']
 })
