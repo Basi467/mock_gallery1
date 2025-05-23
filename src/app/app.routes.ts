@@ -3,7 +3,7 @@ import { HomeComponent } from './PAGES/home/home.component';
 import { ExploreComponent } from './PAGES/explore/explore.component';
 import { ProfileComponent } from './PAGES/profile/profile.component';
 import { SingleviewComponent } from './PAGES/singleview/singleview.component';
-import { Sview2Component } from './PAGES/sview2/sview2.component';
+
 
 export const routes: Routes = [
      {path:'', component: HomeComponent},
@@ -16,9 +16,5 @@ export const routes: Routes = [
         path:"profile", component: ProfileComponent
     },
     { path: 'singleview', component: SingleviewComponent },
-    {
-        path: 'sview2',
-        component: Sview2Component
-    }
     
 ];
